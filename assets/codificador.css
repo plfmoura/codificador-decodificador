@@ -1,0 +1,169 @@
+/* Font "Inter"*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/*corpo do programa*/
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    background: url(img/bg-white.webp) no-repeat center;
+    background-size: 300%;
+    transition: background 0.1s linear;
+}
+
+.titulo {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.419);
+}
+
+.titulo-programa {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.567);
+}
+
+form {
+    border: 1px solid rgba(0, 0, 0, 0.118);
+    background: url(img/bg-white.webp);
+    margin-top: 4rem;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__container {
+    width: 60%;
+    height: 40%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.seletores__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seletor-codigo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size: 16px;
+}
+
+.form-floating {
+    display: flex;
+    align-items: center;
+}
+
+#carregando {
+    margin-inline-start: 1rem;
+    visibility: visible; /*mudar para hidden quando selecionar*/
+}
+
+.indice-cesar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: visible;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.567);
+}
+
+.indice-cesar label {
+    margin-bottom: .2rem;
+}
+
+.indice-cesar div{
+    display: flex;
+}
+
+.indice-cesar div .indice-value {
+    padding-inline: .5rem;
+    color: #3498db;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.acao__container {
+    width: 25%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.codificar-content label,
+.decodificar-content label {
+    margin-inline: .2rem;
+}
+
+.areas-texto {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+textarea {
+    resize: none;
+    width: 40%;
+    height: 80%;
+}
+
+.form-control,
+.floatingInput {
+    width: 40%;
+}
+
+.form-select {
+    width: 10rem;
+}
+
+.areas-texto div {
+    width: 25%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn {
+    width: 80%;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+#btn-copiar {
+    visibility: visible; /*mudar para visible quando aparecer resultado*/
+}
+
+footer {
+    width: 100%;
+    height: 10%;
+
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
