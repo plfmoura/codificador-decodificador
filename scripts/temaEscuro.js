@@ -7,6 +7,7 @@ var seletor = document.querySelector('#selecionador')
 var indice = document.querySelector('#indice-escolha')
 var label = document.querySelector('.label')
 var tituloToggle = document.querySelector('#titulo-toggle');
+var offCanvas = document.querySelector('#staticBackdrop')
 
 tema.addEventListener('change', () => {
     body.classList.toggle('tema-escuro');
@@ -16,6 +17,7 @@ tema.addEventListener('change', () => {
     seletor.classList.toggle('tema-escuro-seletor');
     indice.classList.toggle('tema-escuro-indice-cesar');
     label.classList.toggle('label-night');
+    offCanvas.classList.toggle('offcanvas-dark');
 
     if(tema.checked == true) {
         tituloToggle.innerHTML = "Clique para ir ao tema claro";

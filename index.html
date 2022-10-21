@@ -4,16 +4,56 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- CSS only -->
+        <!-- CSS only Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        
         <link rel="stylesheet" href="assets/reset.css">
         <link rel="stylesheet" href="assets/codificador.css">
         <link rel="stylesheet" href="assets/tema-escuro.css">
-        <link rel="stylesheet" href="assets/all.css">
+        <link rel="stylesheet" href="assets/offcanvas.css">
         
         <title>tipo texto</title>
     </head>
     <body>
+        <div class="btn-acerca">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">?</button>
+        </div>  
+        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="staticBackdropLabel">Sobre o programa</h5>
+            <button type="button" id="btn-fechar-canvas" data-bs-dismiss="offcanvas" aria-label="Close"><img src="assets/img/icon-close.png" alt=""></button>
+            </div>
+            <div class="offcanvas-body">
+            <div>
+                <div class="conteudo-offcanvas">
+                    <h3>Bem-vindo ao Codificador e Decodificador, <br>abaixo veja os passos de utilização.</h3>
+                    <div class="base__container">
+                        <div class="textos-container-base">
+                            <h2>Codifique e Decodifique <br>em Base64</h2>
+                            <h4>A codificação <strong>Base64</strong> é frequentemente utilizada quando existe uma necessidade de transferência e armazenamento de dados binários para um dispositivo designado para trabalhar com dados textuais. Esta codificação é amplamente utilizada por aplicações em conjunto com a linguagem de marcação XML, possibilitando o armazenamento de dados binários em forma de texto.</h4>
+                            <h4>É constituído por 64 caracteres ([A-Za-z0-9], "/" e "+") que deram origem ao seu nome. O carácter "=" é utilizado como um sufixo especial e a especificação original (RFC 989) definiu que o símbolo "*" pode ser utilizado para delimitar dados convertidos, mas não criptografados, dentro de um stream.</h4>
+                            <h5>Exemplo de codificação:</h5>
+                        </div>
+                        <div class="imagem-container">
+                            <img src="assets/img/base64-exemplo.PNG" alt="">
+                        </div>
+                    </div>
+                    <div class="cesar__container">
+                        <div class="textos-container-cesar">
+                            <h2>Codifique e Decodifique <br>em Cifra de Cesar</h2>
+                            <h4>Esse sistema de substituição criado por Cesar pode também ser chamado de Cifra de deslocamento de Cesar, pois segundo Suetônio, Cesar representou todo o alfabeto e em seguida fez uma nova representação deslocando 3 casas.
+                                Se usarmos o alfabeto atual teríamos a seguinte representação</h4>
+                            <div class="img-cesar">
+                                <img src="assets/img/cesar-exemplo.png" alt="">
+                            </div>
+                            <h4>Agora temos um método que pode ser utilizado tanto para criptografar como para fazer a ordem reversa que é descriptografia, e para isso basta conhecer o método ou a chave de criptografia.</h4>
+                            <h4>Essa cifra usa uma chave que foi o deslocamento de três casas referentes as letras do alfabeto. Levando em consideração todas as letras de nosso alfabeto que podemos deslocar teríamos um conjunto de 25 chaves diferentes. Basta apenas que o criador da mensagem cifrada antecipadamente combine com o receptor da mensagem</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
         <form>
             <header class="header__container">
                 <div class="seletores__container">
@@ -76,6 +116,7 @@
                 </label>
             </div>
         </section>
+        
         <footer>
             <div class="footer">
                 <h1 class="titulo">Projeto individual II</h1>
@@ -86,8 +127,6 @@
         <script src="scripts/tipo.js"></script> <!-- OK -->
         <script src="scripts/limpar.js"></script> <!-- OK -->
         <script src="scripts/temaEscuro.js"></script> <!-- OK -->
-
-        
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>

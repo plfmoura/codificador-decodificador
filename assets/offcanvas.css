@@ -1,0 +1,111 @@
+.btn-acerca {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.btn-acerca button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: .5rem;
+}
+
+#staticBackdrop {
+    width: 30%
+}
+
+.conteudo-offcanvas h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(5, 93, 182);
+}
+
+.offcanvas-header h5 {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+}
+
+.conteudo-offcanvas {
+    height: 100vh;
+    text-align: center
+}
+
+/* BASE64 */ 
+.base__container {
+    width: 100%;
+    height: 50%;
+}
+
+.textos-container-base {
+    margin: auto;
+    width: 96%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+.textos-container-base h2 {
+    margin: 1rem 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(2, 97, 129);
+}
+
+.textos-container-base h4 {
+    font-size: 16px;
+    width: 100%;
+}
+
+.conteudo-offcanvas strong {
+    font-weight: 700;
+}
+
+.imagem-container img {
+    border: 1px solid rgba(46, 46, 46, 0.546);
+}
+
+/* CESAR */
+.cesar__container {
+    width: 100%;
+    height: 80%;
+}
+
+.cesar__container div h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(2, 97, 129);
+}
+
+.textos-container-cesar {
+    margin: auto;
+    width: 96%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+.img-cesar img {
+    width: 90%;
+    border: 1px solid rgba(46, 46, 46, 0.546);
+}
+
+#btn-fechar-canvas {
+    width: 10%;
+    border: none;
+    background: none; 
+}
+
+#btn-fechar-canvas img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#btn-fechar-canvas img:hover {
+    box-shadow: 0px 1px 5px 1px rgba(255, 255, 255, 0.348);
+}
