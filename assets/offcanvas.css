@@ -13,7 +13,13 @@
 }
 
 #staticBackdrop {
-    width: 30%
+    width: 30%;
+    height: 100vh;
+}
+
+.offcanvas-body {
+    width: 100%;
+    height: 100vh;
 }
 
 .conteudo-offcanvas h3 {
@@ -29,28 +35,28 @@
 }
 
 .conteudo-offcanvas {
-    height: 100vh;
-    text-align: center
+    text-align: center;
 }
 
 /* BASE64 */ 
 .base__container {
     width: 100%;
     height: 50%;
+    padding-bottom: 2rem;
 }
 
 .textos-container-base {
     margin: auto;
     width: 96%;
-    height: 85%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
 
 .textos-container-base h2 {
     margin: 1rem 0;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     color: rgb(2, 97, 129);
 }
@@ -65,19 +71,23 @@
 }
 
 .imagem-container img {
+    width: 100%;
+    margin-top: 1rem;
     border: 1px solid rgba(46, 46, 46, 0.546);
 }
 
 /* CESAR */
 .cesar__container {
     width: 100%;
-    height: 80%;
+    height: 50%;
+    padding-bottom: 2rem;
 }
 
 .cesar__container div h2 {
     font-size: 22px;
     font-weight: 600;
     color: rgb(2, 97, 129);
+    margin-bottom: 1rem;
 }
 
 .textos-container-cesar {
@@ -90,6 +100,7 @@
 }
 
 .img-cesar img {
+    margin: .5rem auto;
     width: 90%;
     border: 1px solid rgba(46, 46, 46, 0.546);
 }
